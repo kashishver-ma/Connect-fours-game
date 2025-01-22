@@ -19,3 +19,31 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* styles/globals.css */
+
+@media (max-width: 768px) {
+  /* Mobile-specific styles here */
+  .min-h-screen {
+    padding: 20px;
+  }
+  .max-w-3xl {
+    max-width: 100%;
+  }
+  .text-4xl {
+    font-size: 2rem;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+  }
+  /* More responsive styles as needed */
+}
+
+@media (max-width: 480px) {
+  /* Small phone-specific styles */
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  /* Additional adjustments */
+}
