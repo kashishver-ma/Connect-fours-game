@@ -19,7 +19,7 @@ export default function Home() {
   const ROWS = 6;
   const COLS = 7;
   const CONNECT_N = 4;
-  const TARGET_SCORE = 10;
+  // const TARGET_SCORE = 10;
 
   const [grid, setGrid] = useState<GridPosition[][]>([]);
   const [currentPlayer, setCurrentPlayer] = useState<Player>({
@@ -162,7 +162,7 @@ export default function Home() {
         {/* Show current player's turn */}
         <div className="text-center mb-4">
           <h2 className="text-2xl font-semibold">
-            It's {currentPlayer.name}'s turn!
+            Its {currentPlayer.name}s turn!
           </h2>
         </div>
 
